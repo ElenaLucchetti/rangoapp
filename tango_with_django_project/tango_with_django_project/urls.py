@@ -27,5 +27,8 @@ urlpatterns = [
     # with rango/ to be handled by
     # the rango application
     url(r'^admin/', admin.site.urls),
+    url(r'^category/(?P<category_name_slug>[\w\-]+)/$',
+    views.show_category, name='show_category'),
+
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
