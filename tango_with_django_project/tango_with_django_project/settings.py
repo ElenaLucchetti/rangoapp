@@ -18,8 +18,6 @@ TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 STATIC_DIR = os.path.join(BASE_DIR, 'static')
 MEDIA_DIR = os.path.join(BASE_DIR, 'media')
 
-
-
 MEDIA_ROOT = MEDIA_DIR
 MEDIA_URL = '/media/'
 # Quick-start development settings - unsuitable for production
@@ -32,6 +30,8 @@ SECRET_KEY = 'sl2h42i-d6oi&94&9#4m3+6xar5rvpb6h^--r&wy5_#w0-oi7('
 DEBUG = True
 
 ALLOWED_HOSTS = []
+
+LOGIN_URL = '/rango/login/'
 
 
 # Application definition
